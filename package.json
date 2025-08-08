@@ -8,6 +8,7 @@
     "dev": "node --watch index.js"
   },
   "dependencies": {
+    "@hono/node-server": "^1.12.0",
     "@hono/swagger-ui": "^0.5.2",
     "@upstash/redis": "^1.35.0",
     "aniwatch": "^2.17.0",
