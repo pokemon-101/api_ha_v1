@@ -6,7 +6,9 @@ export const axiosInstance = async (endpoint) => {
     const response = await axios.get(config.baseurl + endpoint, {
       headers: {
         ...(config.headers || {}),
+        'Accept-Encoding': 'gzip, deflate', // Disable Brotli compression
       },
+      decompress: true, // Let axios handle decompression
     });
 
     return {
